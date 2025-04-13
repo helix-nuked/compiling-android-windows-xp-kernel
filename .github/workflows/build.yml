@@ -19,10 +19,8 @@ jobs:
           config: a20s_eur_open_defconfig
           arch: arm64
           aosp-gcc: true
-          aosp-clang: true
           ccache: true
           android-version: 11
-          aosp-clang-version: r383902b902b1
           anykernel3: true
           release: true
           other-clang-url: https://github.com/kdrag0n/proton-clang
