@@ -22,6 +22,8 @@ jobs:
           aosp-clang: true
           ccache: true
           android-version: 11
-          aosp-clang-version: r383902b902b
+          aosp-clang-version: r383902b902b1
           anykernel3: true
           release: true
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: master
