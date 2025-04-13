@@ -18,7 +18,8 @@ jobs:
           kernel-url: https://github.com/helix-nuked/android_kernel_samsung_a20s
           config: a20s_eur_open_defconfig
           arch: arm64
-          aosp-gcc: true
+          aosp-gcc: false
+          aosp-clang: false
           ccache: true
           android-version: 11
           anykernel3: true
