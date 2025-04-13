@@ -1,0 +1,27 @@
+# A simple action usage
+name: Build Kernel
+on:
+  workflow_dispatch:
+
+jobs:
+  Build-Kernel:
+    strategy:
+      fail-fast: false
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+    - name: Build Kernel
+      uses: dabao1955/kernel_build_action@main
+      with:
+          kernel-url: https://github.com/helix-nuked/android_kernel_samsung_a20s
+          config: a20s_eur_open_defconfig
+          arch: arm64
+          aosp-gcc: true
+          aosp-clang: true
+          ccache: true
+          android-version: 11
+          aosp-clang-version: r383902b902b
+          anykernel3: true
+          release: true
